@@ -1,0 +1,89 @@
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: $bg-color-light-grey;
+  &__list {
+    display: flex;
+    padding-left: 0px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__item {
+    box-shadow: 0px 1px 3px #0000001f, 0px 1px 1px #00000024,
+      0px 2px 1px #00000033;
+    border-radius: 0px 0px 4px 4px;
+  }
+
+  &__member {
+    max-width: 270px;
+    padding-bottom: 30px;
+    background-color: $bg-color-white;
+
+    text-align: center;
+  }
+
+  &__title {
+    color: $text-color-black;
+
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+  }
+
+  &__name {
+    padding-top: 30px;
+    color: $text-color-black;
+  }
+
+  &__profession {
+    padding-top: 10px;
+    color: $text-color-grey;
+    margin-bottom: 16px;
+  }
+
+  &__network {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: $bg-color-white;
+    color: $border-icon;
+  }
+
+  &__link:last-child {
+    margin-right: 0px;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    background-color: $accent-color-blue;
+    color: $bg-color-white;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border: 0px;
+    outline: 0px;
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+  }
+}

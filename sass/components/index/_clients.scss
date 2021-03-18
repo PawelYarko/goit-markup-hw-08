@@ -1,0 +1,57 @@
+.clients {
+  padding: 94px 0px;
+
+  &__item {
+    margin-right: 30px;
+  }
+
+  &__item:last-child {
+    margin-right: 0px;
+  }
+
+  &__title {
+    margin-bottom: 50px;
+    color: $text-color-black;
+
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+  }
+
+  &__list {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__item:last-child {
+    margin-right: 0px;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 90px;
+    border-color: $border-icon;
+    border: 1px solid;
+    color: $border-icon;
+    border-radius: 4px;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    border-color: $accent-color-blue;
+    color: $accent-color-blue;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: 0px;
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
+}

@@ -1,0 +1,21 @@
+@import "./utils/normalize";
+@import "./utils/variables";
+@import "./utils/utils_classes";
+@import "./utils/fix-classes";
+@import "./utils/container";
+@import "./utils/active";
+@import "./utils/visually-hidden";
+
+@import "./components/index/page-header";
+@import "./components/index/hero";
+@import "./components/index/features";
+@import "./components/index/about";
+@import "./components/index/team";
+@import "./components/index/clients";
+@import "./components/index/footer";
+@import "./components/index/footer-form";
+
+@import "./components/portfolio/portfolio-filter";
+@import "./components/portfolio/portfolio-main";
+@import "./components/portfolio/portfolio-active";
+@import "./components/modal/modal";

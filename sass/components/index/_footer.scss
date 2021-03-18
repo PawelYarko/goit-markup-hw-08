@@ -1,0 +1,100 @@
+.footer {
+  padding: 60px 0px;
+  background-color: $bg-color-grey;
+
+  &__logo {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-style: normal;
+    font-family: "Raleway";
+    font-weight: bold;
+    font-size: 26px;
+
+    color: $text-color-white;
+
+    text-decoration: none;
+  }
+
+  &__label {
+    margin-bottom: 9px;
+    color: $text-color-white;
+
+    font-style: normal;
+  }
+
+  &__address {
+    color: $text-color-black-transparent;
+
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+  &__contact {
+    margin-bottom: 9px;
+    color: $text-color-grey;
+
+    font-weight: 500;
+    font-size: 14px;
+    font-style: normal;
+  }
+
+  &__contact:last-child {
+    margin-bottom: 0px;
+  }
+
+  &__network {
+    margin-top: 12px;
+    margin-left: 70px;
+  }
+
+  &__join {
+    margin-bottom: 20px;
+    color: $bg-color-white;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.15;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #ffffff1a;
+    color: $bg-color-white;
+  }
+
+  &__list:last-child {
+    margin-right: 0px;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    background-color: $accent-color-blue;
+    color: $bg-color-white;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border: 0px;
+    outline: 0px;
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+  }
+}

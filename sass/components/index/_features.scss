@@ -1,0 +1,43 @@
+.features {
+  background-color: $bg-color-white;
+  padding-top: 94px;
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__label {
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+    color: $text-color-black;
+
+    font-weight: 700;
+    font-size: 14px;
+
+    text-transform: uppercase;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    padding-left: 0px;
+  }
+
+  &__text {
+    color: $text-color-grey;
+
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  &__icon {
+    width: 270px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $bg-color-white-solid;
+  }
+}

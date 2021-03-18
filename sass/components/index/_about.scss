@@ -1,0 +1,49 @@
+.about {
+  padding-bottom: 94px;
+  padding-top: 94px;
+  background-color: $bg-color-white;
+
+  &__title {
+    margin-bottom: 50px;
+    color: $text-color-black;
+
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+  }
+
+  &__list {
+    display: flex;
+    padding-left: 0px;
+    margin: 0px;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__item {
+    position: relative;
+  }
+
+  &__text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: block;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    text-align: center;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.15;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: $bg-color-white;
+
+    background: rgba(47, 48, 58, 0.8);
+  }
+}
