@@ -1,4 +1,8 @@
 .about {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
   padding-bottom: 94px;
   padding-top: 94px;
   background-color: $bg-color-white;

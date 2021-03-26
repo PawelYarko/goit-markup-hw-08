@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
@@ -20,29 +20,71 @@
         <div class="container">
             <nav class="nav">
                 <a href="./index.html" class="nav__logo"><span class="logo">Web</span>Studio</a>
-                <ul class="nav__list list">
-                    <li class="nav__item"><a href="" class="nav__link link  nav__link--hidden">Студия</a>
-                    </li>
-                    <li class="nav__item"><a href="./portfolio.html" class="nav__link link nav__link--hidden nav__link--ishidden">Портфолио</a>
-                    </li>
-                    <li class="nav__item"><a href="" class="nav__link link nav__link--hidden">Контакты</a></li>
-                </ul>
+                <button class="menu-toggle js-close-menu">
+                    <svg class="mobile-menu-btn" width="40" height="40" aria-label="Переключатель мобильного меню">
+                        <use href="./img/icon-img/icons.svg#menu"></use>
+                    </svg>
+                </button>
+                <div class="nav__container">
+                    <ul class="nav__list list">
+                        <li class="nav__item"><a href=""
+                                class="nav__link link nav__link--ishidden nav__link--hidden">Студия</a></li>
+                        <li class="nav__item"><a href="./portfolio.html"
+                                class="nav__link link nav__link--hidden">Портфолио</a></li>
+                        <li class="nav__item"><a href="" class="nav__link link nav__link--hidden">Контакты</a></li>
+                    </ul>
     
-                <ul class="nav__list list">
-                    <li class="nav__contact"><a href="mailto:info@example.com.pin"
-                            class="nav__link nav__icon--changes list link">
-                            <svg class="nav__icon" width="16" ; height="12" ;>
-                                <use href="./img/icon-img/icons.svg#message"></use>
-                            </svg>
-                            <span>info@example.com</span>
-                        </a></li>
-                    <li class="nav__contact"><a href="tel:+380991111111" class="nav__link nav__icon--changes list link">
-                            <svg class="nav__icon" width="10" ; height="16" ;>
-                                <use href="./img/icon-img/icons.svg#mobile"></use>
-                            </svg>
-                            <span>+38 099 111 11 11</span>
-                        </a></li>
-                </ul>
+                    <ul class="nav__list-contact list">
+                        <li class="nav__contact">
+                            <a href="mailto:info@example.com.pin" class="nav__link--contact nav__icon--changes list link">
+                                <svg class="nav__icon" width="16" ; height="12" ;>
+                                    <use href="./img/icon-img/icons.svg#message"></use>
+                                </svg>
+                                <span>info@example.com</span>
+                            </a></li>
+                        <li class="nav__contact">
+                            <a href="tel:+380991111111" class="nav__link--contact nav__icon--changes list link">
+                                <svg class="nav__icon" width="10" ; height="16" ;>
+                                    <use href="./img/icon-img/icons.svg#mobile"></use>
+                                </svg>
+                                <span>+38 099 111 11 11</span>
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="menu-container js-menu-container" id="mobile-menu">
+                    <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                        <svg class="mobile-menu-btn" width="40" height="40" aria-label="Переключатель мобильного меню">
+                            <use href="./img/icon-img/icons.svg#close"></use>
+                        </svg>
+                    </button>
+                    <div class="mobile-nav__container">
+                        <ul class="mobile-nav__list list">
+                            <li class="mobile-nav__item"><a href="./index.html" class="mobile-nav__link link">Студия</a>
+                            </li>
+                            <li class="mobile-nav__item"><a href="./portfolio.html"
+                                    class="mobile-nav__link link">Портфолио</a></li>
+                            <li class="mobile-nav__item"><a href="" class="mobile-nav__link link">Контакты</a></li>
+                        </ul>
+    
+                        <ul class="mobile-nav__contact list">
+                            <li class="mobile-nav__contact-item"><a href=""
+                                    class="mobile-nav__contact-tel link">+380991111111</a></li>
+                            <li class="mobile-nav__contact-item"><a href=""
+                                    class="mobile-nav__contact-mail link">info@example.com</a></li>
+                        </ul>
+    
+                        <ul class="mobile-nav__network list">
+                            <li class="mobile-nav__network-item"><a href=""
+                                    class="mobile-nav__network-link link">Instagram</a></li>
+                            <li class="mobile-nav__network-item"><a href=""
+                                    class="mobile-nav__network-link link">Twitter</a></li>
+                            <li class="mobile-nav__network-item"><a href=""
+                                    class="mobile-nav__network-link link">Facebook</a></li>
+                            <li class="mobile-nav__network-item"><a href=""
+                                    class="mobile-nav__network-link link">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
         </div>
     </header>
@@ -68,7 +110,7 @@
                     <li class="portfolio__item">
                         <a href="" class="portfolio__link">
                             <div class="portfolio__overlay">
-                                <img src="./img/img-portfolio/tehnokrac-project.jpg" alt="проект техгокряк" width="370" height="294">
+                                <img src="./img/img-portfolio/tehnokrac-project.jpg" alt="проект техгокряк">
                                 <div class="portfolio__project">
                                     <p class="portfolio__text">
                                         Технокряк это современная
@@ -91,8 +133,7 @@
                     <li class="portfolio__item">
                         <a href="" class="portfolio__link">
                             <div class="portfolio__overlay">
-                                <img src="./img/img-portfolio/basketball-project.jpg" alt="баскетбольный постер новый орлеан с золотыми звездами"
-                                    width="370" height="294">
+                                <img src="./img/img-portfolio/basketball-project.jpg" alt="баскетбольный постер новый орлеан с золотыми звездами">
                                 <div class="portfolio__project">
                                     <p class="portfolio__text">
                                         Технокряк это современная
@@ -113,7 +154,7 @@
                     <li class="portfolio__item">
                         <a href="" class="portfolio__link">
                                 <div class="portfolio__overlay">
-                                    <img src="./img/img-portfolio/seafood-project.jpg" alt="ресторан морскаяеда логотип" width="370" height="294">
+                                    <img src="./img/img-portfolio/seafood-project.jpg" alt="ресторан морскаяеда логотип">
                                     <div class="portfolio__project">
                                         <p class="portfolio__text">
                                             Технокряк это современная
@@ -134,7 +175,7 @@
                     <li class="portfolio__item">
                         <a href="" class="portfolio__link">
                             <div class="portfolio__overlay">
-                                <img src="./img/img-portfolio/prime-project.jpg" alt="прект прайм" width="370" height="294">
+                                <img src="./img/img-portfolio/prime-project.jpg" alt="прект прайм">
                                 <div class="portfolio__project">
                                     <p class="portfolio__text">
                                         Технокряк это современная
@@ -155,7 +196,7 @@
                     <li class="portfolio__item">
                         <a href="" class="portfolio__link">
                             <div class="portfolio__overlay">
-                                <img src="./img/img-portfolio/boxes-project.jpg" alt="проект коробки" width="370" height="294">
+                                <img src="./img/img-portfolio/boxes-project.jpg" alt="проект коробки">
                                 <div class="portfolio__project">
                                     <p class="portfolio__text">
                                         Технокряк это современная
@@ -176,7 +217,7 @@
                     <li class="portfolio__item">
                         <a href="" class="portfolio__link">
                                 <div class="portfolio__overlay">
-                                <img src="./img/img-portfolio/borders-project.jpg" alt="проект у вдохновения нет границ" width="370" height="294">
+                                <img src="./img/img-portfolio/borders-project.jpg" alt="проект у вдохновения нет границ">
                                     <div class="portfolio__project">
                                         <p class="portfolio__text">
                                             Технокряк это современная
@@ -197,7 +238,7 @@
                     <li class="portfolio__item">
                         <a href="" class="portfolio__link">
                             <div class="portfolio__overlay">
-                                <img src="./img/img-portfolio/limited-project.jpg" alt="проект литированая серия" width="370" height="294">
+                                <img src="./img/img-portfolio/limited-project.jpg" alt="проект литированая серия">
                                 <div class="portfolio__project">
                                     <p class="portfolio__text">
                                         Технокряк это современная
@@ -218,7 +259,7 @@
                     <li class="portfolio__item">
                         <a href="" class="portfolio__link">
                             <div class="portfolio__overlay">
-                                <img src="./img/img-portfolio/lab-project.jpg" alt="проект ЛАБ" width="370" height="294">
+                                <img src="./img/img-portfolio/lab-project.jpg" alt="проект ЛАБ">
                                 <div class="portfolio__project">
                                     <p class="portfolio__text">
                                         Технокряк это современная
@@ -239,7 +280,7 @@
                     <li class="portfolio__item">
                         <a href="" class="portfolio__link">
                             <div class="portfolio__overlay">
-                                <img src="./img/img-portfolio/business-project.jpg" alt="проект растущий бизнес" width="370" height="294">
+                                <img src="./img/img-portfolio/business-project.jpg" alt="проект растущий бизнес">
                                 <div class="portfolio__project">
                                     <p class="portfolio__text">
                                         Технокряк это современная
@@ -270,47 +311,49 @@
     
     <footer class="footer">
         <div class="container footer__container">
-            <address class="footer__address">
-                <a href="./index.html" class="footer__logo"><span class="logo">Web</span>Studio</a>
-                <span class="footer__label">г. Киев, пр-т Леси Украинки, 26</span>
-                <a href="mailto:info@example.com.pig" class="footer__contact link">info@example.com</a>
-                <a href="tel:+380991111111" class="footer__contact link">+38 099 111 11 11</a>
-            </address>
+            <div class="footer__address-network">
+                <address class="footer__address">
+                    <a href="./index.html" class="footer__logo"><span class="logo">Web</span>Studio</a>
+                    <span class="footer__label">г. Киев, пр-т Леси Украинки, 26</span>
+                    <a href="mailto:info@example.com.pig" class="footer__contact link">info@example.com</a>
+                    <a href="tel:+380991111111" class="footer__contact link">+38 099 111 11 11</a>
+                </address>
     
-            <div class="footer__network">
-                <h2 class="footer__join">присоединяйтесь</h2>
-                <ul class="footer__list">
-                    <li>
-                        <a href="" class="footer__link">
-                            <svg class="footer__icon" width="20" height="20">
-                                <use href="./img/icon-img/icons.svg#inst"></use>
-                            </svg>
-                        </a>
-                    </li>
+                <div class="footer__network">
+                    <h2 class="footer__join">присоединяйтесь</h2>
+                    <ul class="footer__list">
+                        <li>
+                            <a href="" class="footer__link">
+                                <svg class="footer__icon" width="20" height="20">
+                                    <use href="./img/icon-img/icons.svg#inst"></use>
+                                </svg>
+                            </a>
+                        </li>
     
-                    <li>
-                        <a href="" class="footer__link">
-                            <svg class="footer__icon" width="20" height="20">
-                                <use href="./img/icon-img/icons.svg#tw"></use>
-                            </svg>
-                        </a>
-                    </li>
+                        <li>
+                            <a href="" class="footer__link">
+                                <svg class="footer__icon" width="20" height="20">
+                                    <use href="./img/icon-img/icons.svg#tw"></use>
+                                </svg>
+                            </a>
+                        </li>
     
-                    <li>
-                        <a href="" class="footer__link">
-                            <svg class="footer__icon" width="20" height="20">
-                                <use href="./img/icon-img/icons.svg#fb"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" class="footer__link">
-                            <svg class="footer__icon" width="20" height="20">
-                                <use href="./img/icon-img/icons.svg#linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+                        <li>
+                            <a href="" class="footer__link">
+                                <svg class="footer__icon" width="20" height="20">
+                                    <use href="./img/icon-img/icons.svg#fb"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="footer__link">
+                                <svg class="footer__icon" width="20" height="20">
+                                    <use href="./img/icon-img/icons.svg#linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
     
             <form class="form__footer">
@@ -332,6 +375,12 @@
     
     
     </footer>
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
     </body>
     
     </html>

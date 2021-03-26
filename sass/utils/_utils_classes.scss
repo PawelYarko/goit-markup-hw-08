@@ -9,6 +9,12 @@ body {
   color: $text-color-black;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .list {
   margin: 0px;
   padding-left: 0px;
@@ -75,4 +81,16 @@ body {
   font-weight: 900;
   font-size: 26px;
   color: $accent-color-blue;
+}
+
+.modal__button:hover,
+.modal__button:focus {
+  color: $accent-color-blue;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+  color: $accent-color-blue;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
