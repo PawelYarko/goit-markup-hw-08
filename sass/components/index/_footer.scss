@@ -10,11 +10,14 @@
     }
   }
 
-  &__address-network {
-    @media screen and (min-width: 678px) {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
+  &__address {
+    color: $text-color-black-transparent;
+
+    font-size: 14px;
+    line-height: 1.7;
+
+    @media screen and(max-width:767px) {
+      margin-bottom: 60px;
     }
   }
 
@@ -29,31 +32,42 @@
     color: $text-color-white;
 
     text-decoration: none;
-    text-align: center;
+
+    @media screen and(max-width:1199px) {
+      text-align: center;
+    }
   }
 
   &__label {
     display: block;
     margin-bottom: 9px;
     color: $text-color-white;
-    text-align: center;
     font-style: normal;
+
+    @media screen and(max-width:1199px) {
+      text-align: center;
+    }
   }
 
-  &__address {
-    color: $text-color-black-transparent;
-
-    font-size: 14px;
-    line-height: 1.7;
-  }
   &__contact {
     display: block;
     margin-bottom: 9px;
     color: $text-color-grey;
-    text-align: center;
     font-weight: 500;
     font-size: 14px;
     font-style: normal;
+
+    @media screen and(max-width:1199px) {
+      text-align: center;
+    }
+  }
+
+  &__address-network {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
   }
 
   &__network {
@@ -72,6 +86,10 @@
     line-height: 1.15;
     text-transform: uppercase;
     text-align: center;
+
+    @media screen and(min-width:1200px) {
+      text-align: start;
+    }
   }
 
   &__list {

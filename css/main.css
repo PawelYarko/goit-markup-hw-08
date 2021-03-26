@@ -331,19 +331,6 @@ img {
   outline: 0px;
 }
 
-.filter__button--shadow:hover,
-.filter__button--shadow:focus {
-  -webkit-box-shadow: 0px 3px 1px #0000001a, 0px 1px 2px #00000014, 0px 2px 2px #0000001f;
-          box-shadow: 0px 3px 1px #0000001a, 0px 1px 2px #00000014, 0px 2px 2px #0000001f;
-  border-radius: 4px;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  border: 0px;
-  outline: 0px;
-}
-
 .logo {
   font-family: "Raleway";
   font-weight: 900;
@@ -426,6 +413,7 @@ img {
 
 header {
   position: relative;
+  border-bottom: 1px solid #ececec;
 }
 
 .page-header {
@@ -766,6 +754,12 @@ header {
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .features__item {
+    margin-bottom: 30px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .features__item {
     width: calc((100% - 15px * 8) / 4);
@@ -773,15 +767,15 @@ header {
 }
 
 .features__label {
+  margin-bottom: 10px;
   color: #212121;
   font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .features__label {
-    margin-bottom: 10px;
     text-align: center;
   }
 }
@@ -790,12 +784,6 @@ header {
   color: #757575;
   font-size: 14px;
   line-height: 1.7;
-}
-
-@media screen and (min-width: 480px) {
-  .features__text {
-    margin-bottom: 30px;
-  }
 }
 
 .features__icon {
@@ -819,8 +807,6 @@ header {
 }
 
 .about {
-  padding-bottom: 94px;
-  padding-top: 94px;
   background-color: #ffffff;
 }
 
@@ -875,7 +861,7 @@ header {
 .team {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: #e5e5e5;
+  background-color: #f5f4fa;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1169,17 +1155,15 @@ header {
   }
 }
 
-@media screen and (min-width: 678px) {
-  .footer__address-network {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+.footer__address {
+  color: #ffffff99;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+@media screen and (max-width: 767px) {
+  .footer__address {
+    margin-bottom: 60px;
   }
 }
 
@@ -1192,31 +1176,54 @@ header {
   font-size: 26px;
   color: #ffffff;
   text-decoration: none;
-  text-align: center;
+}
+
+@media screen and (max-width: 1199px) {
+  .footer__logo {
+    text-align: center;
+  }
 }
 
 .footer__label {
   display: block;
   margin-bottom: 9px;
   color: #ffffff;
-  text-align: center;
   font-style: normal;
 }
 
-.footer__address {
-  color: #ffffff99;
-  font-size: 14px;
-  line-height: 1.7;
+@media screen and (max-width: 1199px) {
+  .footer__label {
+    text-align: center;
+  }
 }
 
 .footer__contact {
   display: block;
   margin-bottom: 9px;
   color: #757575;
-  text-align: center;
   font-weight: 500;
   font-size: 14px;
   font-style: normal;
+}
+
+@media screen and (max-width: 1199px) {
+  .footer__contact {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer__address-network {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 
 .footer__network {
@@ -1238,6 +1245,12 @@ header {
   line-height: 1.15;
   text-transform: uppercase;
   text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__join {
+    text-align: start;
+  }
 }
 
 .footer__list {
@@ -1302,7 +1315,6 @@ header {
 
 .form__text {
   display: block;
-  margin-top: 60px;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -1314,6 +1326,12 @@ header {
 @media screen and (min-width: 320px) {
   .form__text {
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .form__text {
+    margin-top: 60px;
   }
 }
 
@@ -1476,8 +1494,6 @@ header {
   border: transparent;
   background-color: #f5f4fa;
   color: #212121;
-  -webkit-box-shadow: 0px 4px 4px #00000026;
-          box-shadow: 0px 4px 4px #00000026;
   border-radius: 4px;
   border-width: 0;
   font-weight: 500;
@@ -1491,6 +1507,12 @@ header {
   color: #ffffff;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-box-shadow: 0px 3px 1px #0000001a, 0px 1px 2px #00000014, 0px 2px 2px #0000001f;
+          box-shadow: 0px 3px 1px #0000001a, 0px 1px 2px #00000014, 0px 2px 2px #0000001f;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border: 0px;
   outline: 0px;
 }
@@ -1501,12 +1523,7 @@ header {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-}
-
-@media screen and (min-width: 768px) {
-  .portfolio__list {
-    margin: -15px;
-  }
+  margin: -15px;
 }
 
 .portfolio__thumb {
@@ -1518,6 +1535,12 @@ header {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media screen and (max-width: 767px) {
+  .portfolio__item {
+    margin: 15px;
+  }
 }
 
 @media screen and (min-width: 768px) {
