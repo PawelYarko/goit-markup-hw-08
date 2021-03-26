@@ -665,30 +665,47 @@ header {
   padding-top: 118px;
   padding-bottom: 118px;
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: center;
   text-align: center;
-  background-image: -webkit-gradient(linear, left top, right top, from(#2f303a66), to(#2f303a66)), url(../../../img/hero-img/hero-img.jpg);
-  background-image: linear-gradient(to right, #2f303a66, #2f303a66), url(../../../img/hero-img/hero-img.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(#2f303a66), to(#2f303a66)), url(../img/hero-img/hero-480/hero-img480.jpg);
+  background-image: linear-gradient(to right, #2f303a66, #2f303a66), url(../img/hero-img/hero-480/hero-img480.jpg);
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(#2f303a66), to(#2f303a66)), url(../img/hero-img/hero-480/hero-img480@2x.jpg);
+    background-image: linear-gradient(to right, #2f303a66, #2f303a66), url(../img/hero-img/hero-480/hero-img480@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(#2f303a66), to(#2f303a66)), url(../img/hero-img/hero-768/hero-img768.jpg);
+    background-image: linear-gradient(to right, #2f303a66, #2f303a66), url(../img/hero-img/hero-768/hero-img768.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(#2f303a66), to(#2f303a66)), url(../img/hero-img/hero-768/hero-img768@2x.jpg);
+    background-image: linear-gradient(to right, #2f303a66, #2f303a66), url(../img/hero-img/hero-768/hero-img768@2x.jpg);
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
+    background-image: -webkit-gradient(linear, left top, right top, from(#2f303a66), to(#2f303a66)), url(../img/hero-img/hero-1200/Img.jpg);
+    background-image: linear-gradient(to right, #2f303a66, #2f303a66), url(../img/hero-img/hero-1200/Img.jpg);
   }
 }
 
-@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(#2f303a66), to(#2f303a66)), url(../../../img/hero-img/hero-img@2x.jpg);
-    background-image: linear-gradient(to right, #2f303a66, #2f303a66), url(../../../img/hero-img/hero-img@2x.jpg);
-  }
-}
-
-@media screen and (min-device-pixel-ratio: 3), screen and (-webkit-min-device-pixel-ratio: 3), screen and (min-resolution: 288dpi), screen and (min-resolution: 3dppx) {
-  .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(#2f303a66), to(#2f303a66)), url(../../../img/hero-img/hero-img@3x.jpg);
-    background-image: linear-gradient(to right, #2f303a66, #2f303a66), url(../../../img/hero-img/hero-img@3x.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(#2f303a66), to(#2f303a66)), url(../img/hero-img/hero-1200/Img@2x.jpg);
+    background-image: linear-gradient(to right, #2f303a66, #2f303a66), url(../img/hero-img/hero-1200/Img@2x.jpg);
   }
 }
 
@@ -882,6 +899,29 @@ header {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+}
+
+.team .team__thumb {
+  height: 460px;
+}
+
+@media screen and (min-width: 768px) {
+  .team .team__thumb {
+    height: 374px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team .team__thumb {
+    height: 260px;
+  }
+}
+
+.team .team__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .team__item {
@@ -1455,26 +1495,29 @@ header {
   outline: 0px;
 }
 
+.portfolio__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 @media screen and (min-width: 768px) {
   .portfolio__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     margin: -15px;
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .portfolio__list {
-    margin: -15px;
-  }
+.portfolio__thumb {
+  height: 294px;
 }
 
-.portfolio__item {
-  margin-left: 30px;
-  margin-bottom: 30px;
+.portfolio__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media screen and (min-width: 768px) {
@@ -2081,8 +2124,6 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
   z-index: 999;
   background-color: #fff;
   -webkit-transform: translateX(100%);
@@ -2131,6 +2172,8 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 48px 0 48px 40px;
+  height: 100vh;
+  width: 100vw;
 }
 
 .mobile-nav__list {
@@ -2140,12 +2183,6 @@ header {
 }
 
 .mobile-nav__contact {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-}
-
-.mobile-nav__network {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
