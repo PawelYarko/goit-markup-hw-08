@@ -3,6 +3,10 @@
     display: none;
   }
 
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
+  }
+
   background-color: $bg-color-white;
 
   &__title {

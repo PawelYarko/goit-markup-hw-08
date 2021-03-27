@@ -816,6 +816,12 @@ header {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .about {
+    padding-bottom: 94px;
+  }
+}
+
 .about__title {
   margin-bottom: 50px;
   color: #212121;
@@ -946,11 +952,12 @@ header {
   margin-bottom: 30px;
   text-align: center;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
 }
 
 @media screen and (min-width: 1200px) {
   .team__title {
+    font-size: 36px;
     margin-bottom: 50px;
   }
 }
@@ -1092,7 +1099,7 @@ header {
   color: #212121;
   text-align: center;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
 }
 
 @media screen and (min-width: 320px) {
@@ -1101,9 +1108,10 @@ header {
   }
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 1200px) {
   .clients__title {
     margin-bottom: 50px;
+    font-size: 36px;
   }
 }
 
@@ -1576,6 +1584,7 @@ header {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
+  text-align: left;
 }
 
 .portfolio__description {
@@ -1583,6 +1592,7 @@ header {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.9;
+  text-align: left;
 }
 
 .portfolio__link {
@@ -2175,10 +2185,15 @@ header {
   }
 }
 
-.menu-toggle {
+.menu-toggle-close {
   position: absolute;
   top: 10px;
   right: 15px;
+  color: #212121;
+}
+
+.menu-toggle-open {
+  display: block;
   color: #212121;
 }
 
